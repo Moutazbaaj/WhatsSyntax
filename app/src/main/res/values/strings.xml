@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WhatsSyntax</string>
+    <string name="status">Status</string>
+    <string name="settings">Settings</string>
+    <string name="notes">Notes</string>
+    <string name="calls">Calls</string>
+    <string name="chats">Chats</string>
+    <string name="please_enter_a_valid_image_url_here">Please enter a valid image \'URL\' here</string>
+    <string name="by_entering_a_valid_image_url_you_can_update_your_profile_picture">By entering a valid image URL, you can update your profile picture.</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_notes">Delete All Notes</string>
+    <string name="textview">TextView</string>
+    <string name="type_here">type here</string>
+    <string name="send">Send</string>
+</resources>

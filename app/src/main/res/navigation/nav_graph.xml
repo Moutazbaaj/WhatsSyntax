@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatsFragment">
+
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.CallsFragment"
+        android:label="CallsFragment" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.ChatsFragment"
+        android:label="ChatsFragment" >
+        <action
+            android:id="@+id/action_chatsFragment_to_chatDetailFragment"
+            app:destination="@id/chatDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.StatusFragment"
+        android:label="StatusFragment" >
+        <action
+            android:id="@+id/action_statusFragment_to_statusDetailFragment"
+            app:destination="@id/statusDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatDetailFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.ChatDetailFragment"
+        android:label="ChatDetailFragment" >
+        <argument
+            android:name="chatId"
+            app:argType="integer" />
+        <action
+
+            android:id="@+id/action_chatDetailFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+        <argument android:name="name" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusDetailFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.StatusDetailFragment"
+        android:label="StatusDetailFragment" >
+        <argument
+            android:name="status"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_statusDetailFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.syntax_institut.whatssyntax.ui.NotesFragment"
+        android:label="NotesFragment" />
+</navigation>
